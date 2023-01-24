@@ -93,6 +93,8 @@ while run == True:
             stud5 = Student(input("plaese, enter the name of Student >>> ").strip(), input("plaese, enter the surename of Student >>> ").strip(), input("plaese, enter ID of Student >>> ").strip(), input("please, enter gender of Student (F, f or M, m) >>> ").strip(), input("plaese, enter course of Student >>> ").strip(), input("plaese, enter faculty of Student >>> ").strip(), input("plaese, enter speciality of Student >>> ").strip(), 5)
         elif stud1 != 1 and stud2 != 1 and stud3 != 1 and stud4 != 1 and stud5 != 1 and stud6 == 1:
             stud6 = Student(input("plaese, enter the name of Student >>> ").strip(), input("plaese, enter the surename of Student >>> ").strip(), input("plaese, enter ID of Student >>> ").strip(), input("please, enter gender of Student (F, f or M, m) >>> ").strip(), input("plaese, enter course of Student >>> ").strip(), input("plaese, enter faculty of Student >>> ").strip(), input("plaese, enter speciality of Student >>> ").strip(), 6)
+        else:
+            print("database is overfull")
     elif comand == "all_info":
         comand2 = input("please enter the full name of student >>> ").strip()
         if comand2 == stud1.full_name:
@@ -173,6 +175,8 @@ while run == True:
         elif fac1 != 1 and fac2 != 1 and fac3 == 1:
             print("This is third faculty in base")
             fac3 = Faculty(input("please enter the name of Faculty >>> "), input("please enter the Dean of Faculty >>> "))
+        else:
+            print("database is overfull")
     elif comand == "add_student_to_faculty":
         comand2 = input("please enter the name of Faculty >>> ")
         if fac1 != 1:
