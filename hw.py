@@ -28,7 +28,7 @@ class Student:
     def get_full_name(self):
         if self.gender == "F" or self.gender == "f":
             print("Her name is >>> ", self.full_name)
-        elif self.gender == "FM" or self.gender == "m":
+        elif self.gender == "M" or self.gender == "m":
             print("His name is >>> ", self.full_name)
     def add_subject(self, sub):
         for i in sub:
