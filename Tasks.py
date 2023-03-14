@@ -108,7 +108,7 @@ priority: {i.priority_str}
                     if today_date[0] + 1 == i.deadline[0]:
                         print(i)
                         c2 += 1
-        if c1 == c2:
+        if c1 != c2:
             print("There is no tasks for tomorrow")
         print(Style.RESET_ALL)
 
